@@ -8,6 +8,8 @@ const cors= require('cors')
 App.use(cors())
 App.use(Express.json())
 
+const router= require('./src/Routers/Enviar.Routes')
+App.use('/api',router)
 
 
 App.listen(PORT, () => {

@@ -9,6 +9,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+
 async function enviarCorreo(destinatario, asunto, cuerpo) {
   try {
     const info = await transporter.sendMail({
@@ -27,4 +28,4 @@ async function enviarCorreo(destinatario, asunto, cuerpo) {
   }
 }
 
-module.exports = enviarCorreo;
+module.exports = {enviarCorreo};
