@@ -10,9 +10,10 @@ const EnviarCorreo = async (req, res) => {
         return res.status(404).json({ Error: 'Deben Completar los Campos para Continuar' })
         console.error('⛔ Campos Vacios')
     }
-
+   
     // --------------> Email : Tabla de la Base de Datos
-    query = 'INSERT INTO Email(Email,Asunto,Cuerpo)VALUES(?,?,?)'
+    query = 'INSERT INTO Email(Email,Asunto,Cuerpo)VALUES(?,?,?)'  
+    
     db.run(query, [Email, Asunto, Cuerpo], async (Error) => {
         if (Error) {
             return res.status(500).json({ Error: 'Error interno' })
