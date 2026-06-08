@@ -1,7 +1,8 @@
 # 📧 Proyecto EMAIL - Servidor de Envío de Correos
 
 Este proyecto implementa un servidor en **Node.js** que permite **enviar correos electrónicos** mediante peticiones HTTP. Está estructurado en capas para mantener un código limpio, modular y escalable.
-
+sdfzxfzxc
+xcvxcvcxvcxv
 ---
 
 ## 🗂️ Estructura del Proyecto
